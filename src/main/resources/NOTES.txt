@@ -1,0 +1,37 @@
+=====================================
+ NOTES FOR THE src/main/resources DIR
+=====================================
+
+This directory holds non-code assets and configuration files that the application needs at runtime.
+When the project is built, these resources are packaged into the final JAR and made available on the classpath.
+
+Common Uses:
+------------
+1. Configuration Files:
+   - application.properties or application.yml
+   - Database connection settings
+   - Custom configuration files for libraries or frameworks
+
+2. Logging Configuration:
+   - logback.xml or similar config files for logging frameworks
+
+3. Localization (i18n):
+   - Messages.properties or other resource bundle files for different languages
+
+4. Static Data and Assets:
+   - JSON, XML, or TXT files that your application reads as input
+   - Template files (such as HTML, Velocity, Freemarker, or Thymeleaf templates)
+   - Images or icons, if needed
+
+5. Documentation or Metadata:
+   - Files explaining configuration settings
+   - Schema definitions or sample data files
+
+Tips:
+-----
+- Keep resource filenames and directories organized by purpose.
+- Avoid placing large binary files here if possible.
+- Consider creating subdirectories (e.g., `db/`, `config/`, `templates/`) to keep files organized.
+- If you add a configuration file, consider adding comments to guide users on how to change settings or where to find documentation.
+
+This NOTES.txt file is here as a reminder and a guide. Feel free to remove or update it as the project evolves.
