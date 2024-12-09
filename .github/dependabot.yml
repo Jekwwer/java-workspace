@@ -33,6 +33,10 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    groups:
+      maven-packages:
+        patterns:
+          - "org.apache.maven.plugins:*"
     reviewers:
       - "Jekwwer"
     assignees:
